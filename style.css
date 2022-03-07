@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #fff;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bienvenida {
+	margin: 10px 30px;
+}
+
+.titulo-portfolio {
+	font-size: 38px;
+	text-align: center;
+}
+
+.about-portfolio {
+	font-size: 24px;
+	text-align: center;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 375px;
+	height: 465px;
+	margin: 40px;
+	border: 2px solid #000;
+	border-radius: 4px;
+}
+
+@media (min-width: 960px) {
+	.item {
+		margin: 20px;
+	}
+}
+
+.img-item {
+	width: 100%;
+	min-height: 220px;
+	max-height: 255px;
+	object-fit: cover;
+}
+
+@media (min-width: 960px) {
+	.item-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+
+.info-item {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	text-align: center;
+}
+
+@media (min-width: 455px) {
+	.info-item {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+}
+
+.nombre-item {
+	margin: 5px 5px;
+	font-size: 25px;
+}
+
+@media (min-width: 455px) {
+	.nombre-item {
+		font-size: 30px;
+		text-align: center;
+	}
+}
+
+.descripcion-item {
+	margin: 5px 10px;
+	font-size: 16px;
+}
+
+@media (min-width: 455px) {
+	.descripcion-item {
+		font-size: 18px;
+	}
+}
+
+.detalles {
+	font-size: 14px;
+	font-weight: 700;
+	align-self: flex-end;
+	color: #51aff3;
+}
+
+@media (min-width: 455px) {
+	.detalles {
+		font-size: 18px;
+	}
+}
